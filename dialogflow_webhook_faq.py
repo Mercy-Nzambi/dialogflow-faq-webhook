@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Load FAQ from CSV
 faq_data = {}
 
-def load_faq(file_path='/Users/adrian/dialogflowbase/agriculture_faq_kids.csv'):
+def load_faq(file_path='agriculture_faq_kids.csv'):
     print("Looking for:", os.path.abspath(file_path))
     with open(file_path, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
